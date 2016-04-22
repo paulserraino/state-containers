@@ -4,7 +4,7 @@
   "description": "predictable state container implementations",
   "main": "ramda.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "author": "Paul Serraino",
   "license": "MIT",
@@ -13,5 +13,9 @@
     "reduce-reducers": "^0.1.2",
     "redux": "^3.5.0",
     "rx": "^4.1.0"
+  },
+  "devDependencies": {
+    "expect": "^1.18.0",
+    "mocha": "^2.4.5"
   }
 }

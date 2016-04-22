@@ -19,6 +19,10 @@ Container.prototype.reducer = function(r) {
     return this;
 };
 
+Container.prototype.getState = function () {
+    return this.currentState;
+};
+
 Container.prototype.onNext = function(action) {
     this.currentState = this.reducer(this.currentState, [action]);
     this.subscribers.forEach(sub => sub(this.currentState));

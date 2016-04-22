@@ -29,3 +29,7 @@ var subject = (new Container)
 subject.onNext({ type: 'INC'})
 subject.onNext({ type: 'INC'})
 subject.onNext({ type: 'DEC'})
+
+module.exports = {
+    increment, decrement, subject
+};
